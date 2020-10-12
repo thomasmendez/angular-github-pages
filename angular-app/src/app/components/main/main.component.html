@@ -1,0 +1,9 @@
+<app-counter [counter]="counter"></app-counter>
+<div class="center">
+    <app-inc class='child inline-block-child' (onClick)="incrementCall($event)" [label]="inc_label"></app-inc>
+    <app-dec class='child inline-block-child' (onClick)="decrementCall($event)" [label]="dec_label"></app-dec>
+</div>
+<br>
+<div class="center">
+    <app-reset (onClick)="resetCall($event)" [label]="reset_label"></app-reset>
+</div>
